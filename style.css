@@ -26,3 +26,7 @@ body{
 ul.responsive {
     display: none;
 }
+
+li a{
+    text-decoration: none;
+}
