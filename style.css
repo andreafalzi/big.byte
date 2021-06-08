@@ -21,3 +21,8 @@ body{
     font-size: 62.5%;
 }
 
+/* NAVBAR */
+
+ul.responsive {
+    display: none;
+}
