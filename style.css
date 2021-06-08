@@ -3,9 +3,6 @@
 
 /* VARIABLES */
 
-:root{
-    /* variables go here */
-}
 
 /* CSS RESETS AND BEHAVIOUR */
 
@@ -23,3 +20,4 @@ html{
 body{
     font-size: 62.5%;
 }
+
