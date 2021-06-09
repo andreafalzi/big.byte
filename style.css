@@ -122,6 +122,7 @@ footer img {
 @media (max-width: 768px) {
   body {
     display: block;
+    overflow: auto;
   }
 
   /* NAVBAR */
