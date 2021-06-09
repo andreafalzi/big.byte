@@ -1,4 +1,5 @@
 /* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@700&display=swap');
 
 /* VARIABLES */
 :root {
@@ -28,7 +29,7 @@ body {
     "nav main lc"
     "f   f   f";
   grid-template-columns: 7.5% 72.5% 20%;
-  grid-template-rows: 90vh 10vh;
+  grid-template-rows: 94vh 6vh;
   overflow: hidden;
 }
 
@@ -79,12 +80,6 @@ li a {
 
 i.burger {
   display: none;
-}
-
-/* SECTION FIRST-COL */
-section.first-col {
-  grid-area: fc;
-  background-color: var(--sec-bg-color);
 }
 
 /* MAIN */
