@@ -24,8 +24,8 @@ body {
   font-size: 62.5%;
   display: grid;
   grid:
-    "nav fc main lc"
-    "f   f   f   f";
+    "nav main lc"
+    "f   f   f";
   grid-template-columns: 7.5% 72.5% 20%;
   grid-template-rows: 90vh 10vh;
   overflow: hidden;
