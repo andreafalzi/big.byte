@@ -136,11 +136,21 @@ footer {
 
 .social {
   font-size: 1.6rem;
+  margin: 0 40px;
+  text-align: center;
 }
 
 .social a{
   font-size: 1.6rem;
   color: var(--pri-text-color);
+}
+
+.social a i{
+  transition: transform 700ms;
+}
+
+.social a i:hover{
+transform: scale(2);
 }
 
 .social i {
@@ -151,6 +161,7 @@ footer {
   font-size: 1.2rem;
   font-family: 'Fira Sans', sans-serif;
   color: var(--pri-text-color);
+  text-align: right;
 }
 
 .text-footer a {
