@@ -80,12 +80,6 @@ i.burger {
   display: none;
 }
 
-/* SECTION FIRST-COL */
-section.first-col {
-  grid-area: fc;
-  background-color: var(--sec-bg-color);
-}
-
 /* MAIN */
 main {
   grid-area: main;
