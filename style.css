@@ -1,6 +1,9 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@700&display=swap');
 
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 /* VARIABLES */
 :root {
   --pri-bg-color: #202225;
