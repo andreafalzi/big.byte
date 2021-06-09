@@ -128,8 +128,50 @@ footer {
   background-color: var(--for-bg-color);
 }
 
+.footer-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social {
+  font-size: 1.6rem;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.social a{
+  font-size: 1.6rem;
+  color: var(--pri-text-color);
+}
+
+.social a i{
+  transition: transform 700ms;
+}
+
+.social a i:hover{
+transform: scale(2);
+}
+
+.social i {
+  margin: 0 5px;
+}
+
+.text-footer {
+  font-size: 1.2rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--pri-text-color);
+  text-align: right;
+}
+
+.text-footer a {
+text-decoration: none;
+  color: var(--pri-text-color);
+  font-size: 1.2rem;
+}
+
 footer img {
-  height: 50px;
+  height: 30px;
 }
 
 /* MEDIA QUERY */
