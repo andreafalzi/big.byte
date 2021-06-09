@@ -27,7 +27,7 @@ body {
     "nav main lc"
     "f   f   f";
   grid-template-columns: 7.5% 72.5% 20%;
-  grid-template-rows: 90vh 10vh;
+  grid-template-rows: 94vh 6vh;
   overflow: hidden;
 }
 
