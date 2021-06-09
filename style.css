@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@700&display=swap");
 
 /* font-family: 'Fira Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
@@ -90,13 +90,28 @@ main {
   grid-area: main;
   background-color: var(--tir-bg-color);
   overflow-y: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.box {
-  height: 500px;
-  width: 500px;
-  background-color: red;
+/* section about */
+section#about {
+  text-align: center;
+  padding: 50px 50px;
+  color: var(--pri-text-color);
+}
+
+section#about h1 {
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+section#about p {
+  font-family: "Fira Sans", sans-serif;
+}
+
+section#about img {
+  margin-top: 30px;
+  width: 100%;
 }
 
 /* SECTION LAST-COL */
@@ -118,6 +133,7 @@ footer img {
 }
 
 /* MEDIA QUERY */
+/* ipad size */
 @media (max-width: 768px) {
   body {
     display: block;
@@ -153,7 +169,7 @@ footer img {
   ul#menu.responsive {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   ul.responsive li {
@@ -166,4 +182,22 @@ footer img {
     border-left: none;
   }
 }
+/* phone size */
+@media (max-width: 375px) {
+  section#about {
+    padding: 20px 20px;
+  }
 
+  section#about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  section#about p {
+    font-size: 1rem;
+  }
+
+  section#about img {
+    display: none;
+  }
+}
