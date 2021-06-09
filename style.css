@@ -6,6 +6,7 @@
   --sec-bg-color: #2f3136;
   --tir-bg-color: #36393f;
   --for-bg-color: #292b2f;
+  --pri-text-color: #f2f2f2;
 }
 
 /* CSS RESETS AND BEHAVIOUR */
@@ -73,7 +74,7 @@ ul li {
 li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #f2f2f2;
+  color: var(--pri-text-color);
 }
 
 i.burger {
@@ -146,7 +147,7 @@ footer img {
   /* overwrite the display: none  */
   i.burger {
     display: block;
-    color: #f2f2f2;
+    color: var(--pri-text-color);
     font-size: 1.6rem;
     cursor: pointer;
   }
