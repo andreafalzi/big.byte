@@ -10,3 +10,4 @@ document.onclick = function (e) {
     x.classList.remove("responsive");
   }
 };
+

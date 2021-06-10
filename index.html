@@ -11,16 +11,16 @@
     <title>BIG.BYTE</title>
   </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <script src="https://kit.fontawesome.com/92c15bccae.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/contact.css">
-  <title>BIG.BYTE</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="https://kit.fontawesome.com/92c15bccae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>BIG.BYTE</title>
+  </head>
   <body>
     <nav>
       <ul class="nav">
@@ -29,7 +29,7 @@
         </li>
         <li><a href="burger.html">Burger</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><i id="burgerMenu" onclick="showMenu()" class="burger fas fa-bars"></i></li>
       </ul>
@@ -38,17 +38,51 @@
       <ul id="menu">
         <li><a href="burger.html">Burger</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <!-- BURGER MENU END -->
     </nav>
 
     <main>
+      <!-- SECTION ABOUT -->
       <section id="about">
         <h1><i class="fas fa-khanda"></i> Our Quest <i class="fas fa-khanda"></i></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime odit temporibus incidunt voluptatem, iste, ipsum omnis voluptatum minus minima facere fugit in dolores blanditiis vero reprehenderit iure veniam quia sapiente architecto deleniti labore tenetur rerum? Sit architecto nulla laboriosam cum ex. Exercitationem est voluptates accusantium sequi modi, placeat ab?</p>
         <img src="img/mario-bros-big-byte.jpg" alt="mario-bros-big-byte" />
+      </section>
+
+      <!-- SECTION SPONSOR -->
+
+      <section id="partners">
+        <h1><i class="far fa-handshake"></i> Our Partners <i class="far fa-handshake"></i></h1>
+        <div id="myCardList" class="card-list">
+          <button onclick="next()">Next</button>
+          <div id="cardOne" class="card-item card-active">
+            <div class="card-img"><img src="img/Team_Liquid_logo.png" alt="team-liquid-logo" /></div>
+            <div class="card-text">
+              <div class="card-text-title"><h4>Team Liquid</h4></div>
+              <div class="card-text-paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, cupiditate eius perferendis delectus iure ullam maiores dignissimos unde. Nam eligendi molestias laudantium molestiae. Aliquam repudiandae impedit labore, et amet saepe tenetur! Earum distinctio, aspernatur id natus voluptates amet ducimus magnam accusamus dolor quis unde porro ut doloribus harum? Non.</p></div>
+              <div class="card-text-button">Visit Website</div>
+            </div>
+          </div>
+          <div id="cardTwo" class="card-item">
+            <div class="card-img"><img src="img/Razer-Symbol.jpg" alt="razer-logo" /></div>
+            <div class="card-text">
+              <div class="card-text-title"><h4>Razer</h4></div>
+              <div class="card-text-paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, cupiditate eius perferendis delectus iure ullam maiores dignissimos unde. Nam eligendi molestias laudantium molestiae. Aliquam repudiandae impedit labore, et amet saepe tenetur! Earum distinctio, aspernatur id natus voluptates amet ducimus magnam accusamus dolor quis unde porro ut doloribus harum? Non.</p></div>
+              <div class="card-text-button">Visit Website</div>
+            </div>
+          </div>
+          <div id="cardThree" class="card-item">
+            <div class="card-img"><img src="img/Steam_icon_logo.png" alt="steam-logo" /></div>
+            <div class="card-text">
+              <div class="card-text-title"><h4>Steam</h4></div>
+              <div class="card-text-paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, cupiditate eius perferendis delectus iure ullam maiores dignissimos unde. Nam eligendi molestias laudantium molestiae. Aliquam repudiandae impedit labore, et amet saepe tenetur! Earum distinctio, aspernatur id natus voluptates amet ducimus magnam accusamus dolor quis unde porro ut doloribus harum? Non.</p></div>
+              <div class="card-text-button">Visit Website</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- CONTACT FORM START -->
@@ -328,7 +362,7 @@
       <input type="email" name="email" id="email" />
       <button>Submit</button>
     </section>
-    
+
     <footer>
       <div class="footer-wrapper">
         <div class="logo-footer footer-col">
@@ -347,8 +381,7 @@
         </div>
       </div>
     </footer>
-  <!-- JAVASCRIPT FILES -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
