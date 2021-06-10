@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script src="https://kit.fontawesome.com/92c15bccae.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/contact.css" />
     <title>BIG.BYTE</title>
@@ -56,9 +57,8 @@
 
       <section id="partners">
         <h1><i class="far fa-handshake"></i> Our Partners <i class="far fa-handshake"></i></h1>
-        <div id="myCardList" class="card-list">
-          <button onclick="next()">Next</button>
-          <div id="cardOne" class="card-item card-active">
+        <div id="myCardList" class="card-list owl-carousel">
+          <div class="card-item card-active">
             <div class="card-img"><img src="img/Team_Liquid_logo.png" alt="team-liquid-logo" /></div>
             <div class="card-text">
               <div class="card-text-title"><h4>Team Liquid</h4></div>
@@ -66,7 +66,7 @@
               <div class="card-text-button">Visit Website</div>
             </div>
           </div>
-          <div id="cardTwo" class="card-item">
+          <div class="card-item">
             <div class="card-img"><img src="img/Razer-Symbol.jpg" alt="razer-logo" /></div>
             <div class="card-text">
               <div class="card-text-title"><h4>Razer</h4></div>
@@ -74,7 +74,7 @@
               <div class="card-text-button">Visit Website</div>
             </div>
           </div>
-          <div id="cardThree" class="card-item">
+          <div class="card-item">
             <div class="card-img"><img src="img/Steam_icon_logo.png" alt="steam-logo" /></div>
             <div class="card-text">
               <div class="card-text-title"><h4>Steam</h4></div>
@@ -83,6 +83,8 @@
             </div>
           </div>
         </div>
+        <h3>For Business Enquiries</h3>
+        <button>Drop us a Message</button>
       </section>
 
       <!-- CONTACT FORM START -->
@@ -382,6 +384,10 @@
       </div>
     </footer>
     <!-- JAVASCRIPT FILES -->
+    <!-- sponsors cicle -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
     <script src="js/script.js"></script>
   </body>
 </html>

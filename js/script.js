@@ -11,3 +11,11 @@ document.onclick = function (e) {
   }
 };
 
+/* Sponsors cicle */
+var navs = $(".card-list > .card-item");
+setInterval(function () {
+  var cur = $(".card-list > .card-active").index();
+  var nxt = (cur + 1) % navs.length;
+  navs.eq(cur).removeClass("card-active");
+  navs.eq(nxt).addClass("card-active");
+}, 4000);

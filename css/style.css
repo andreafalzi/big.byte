@@ -126,17 +126,32 @@ section#partners h1 {
   font-family: "Poppins", sans-serif;
 }
 
+section#partners .card-list {
+  cursor: pointer;
+  position: relative;
+}
+
 section#partners .card-item {
   display: none; /* not active class property set to display none and opacity 0 */
-  opacity: 0;
   border: 2px solid var(--pri-text-color);
   border-radius: 5px;
   padding: 15px 18px;
 }
 
 section#partners .card-active {
-  opacity: 1; /* active card get displayed and set opacity 1 */
   display: flex;
+  animation-name: fade;
+  animation-duration: 700ms;
+}
+
+/* Fading animation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 section#partners .card-img {
@@ -171,8 +186,14 @@ section#partners .card-text-button {
   font-size: 1.4rem;
   text-transform: uppercase;
   padding: 12px 20px;
+  box-shadow: inset 0px 0px 0px var(--pri-text-color);
+  transition: all 1s !important;
 }
 
+section#partners .card-text-button:hover {
+  box-shadow: inset 250px 0px 0px var(--pri-text-color);
+  color: var(--tir-bg-color);
+}
 /* SECTION LAST-COL */
 section.last-col {
   grid-area: lc;
