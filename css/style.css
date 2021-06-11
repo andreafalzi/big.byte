@@ -1,0 +1,315 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@700&display=swap");
+
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* VARIABLES */
+:root {
+  --pri-bg-color: #202225;
+  --sec-bg-color: #2f3136;
+  --tir-bg-color: #36393f;
+  --for-bg-color: #292b2f;
+  --pri-text-color: #f2f2f2;
+}
+
+/* CSS RESETS AND BEHAVIOUR */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  display: grid;
+  grid:
+    "nav main lc"
+    "f   f   f";
+  grid-template-columns: 7.5% 72.5% 20%;
+  grid-template-rows: 94vh 6vh;
+  overflow: hidden;
+}
+
+/* SCROLLBAR STYLING */
+
+main::-webkit-scrollbar {
+  width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2f3136; 
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #202225; 
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: #20222570; 
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+/* NAVBAR */
+nav {
+  grid-area: nav;
+  background-color: var(--pri-bg-color);
+  padding: 20px 10px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img.logo {
+  height: 40px;
+}
+
+ul#menu {
+  display: none;
+}
+
+ul li {
+  margin-bottom: 50px;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--pri-text-color);
+}
+
+i.burger {
+  display: none;
+}
+
+/* MAIN */
+main {
+  grid-area: main;
+  background-color: var(--tir-bg-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #202225 #2f3136;
+}
+
+/* SECTION HOME */
+
+.cover h1{
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  color: var(--pri-text-color);
+  text-transform: uppercase;
+  
+  text-align: center;
+}
+
+.vidWrapper video{
+  width: 100%;
+}
+
+/* section about */
+section#about {
+  text-align: center;
+  padding: 50px 50px;
+  color: var(--pri-text-color);
+}
+
+section#about h1 {
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+section#about p {
+  font-family: "Fira Sans", sans-serif;
+}
+
+section#about img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* SECTION LAST-COL */
+section.last-col {
+  grid-area: lc;
+  background-color: var(--tir-bg-color);
+  border-left: 1px solid rgb(129, 129, 129);
+}
+
+/* FOOTER */
+footer {
+  grid-area: f;
+  padding: 15px;
+  background-color: var(--for-bg-color);
+}
+
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.footer-col {
+  width: 100%;
+}
+
+.social {
+  text-align: right;
+}
+
+.social a{
+  font-size: 1.6rem;
+  color: var(--pri-text-color);
+}
+
+.social a i{
+  transition: transform 700ms;
+}
+
+.social a i:hover{
+transform: scale(2);
+}
+
+.social i {
+  margin: 0 5px;
+}
+
+.text-footer {
+  font-size: 1.2rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--pri-text-color);
+  text-align: center;
+}
+
+.text-footer a {
+text-decoration: none;
+  color: var(--pri-text-color);
+  font-size: 1.2rem;
+}
+
+footer img {
+  height: 30px;
+}
+
+/* MEDIA QUERY */
+/* ipad size */
+@media (max-width: 768px) {
+  body {
+    display: block;
+    overflow: auto;
+  }
+
+  /* NAVBAR */
+
+  /* keep logo and burger, hide the rest */
+  nav ul.nav li:not(:first-child, :last-child) {
+    display: none;
+  }
+
+  /* turn the navbar into a flex */
+  nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li {
+    margin-bottom: 0px;
+  }
+  /* overwrite the display: none  */
+  i.burger {
+    display: block;
+    color: var(--pri-text-color);
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  /* give style to the menu */
+  ul#menu.responsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  ul.responsive li {
+    margin: 50px 0;
+  }
+
+  /* SECTION */
+
+  section.last-col {
+    border-left: none;
+  }
+
+  /* FOOTER */
+  .social {
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  justify-content: end;
+}
+
+}
+
+
+
+/* phone size */
+@media (max-width: 480px) {
+  section#about {
+    padding: 20px 20px;
+  }
+
+  section#about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  section#about p {
+    font-size: 1rem;
+  }
+
+  section#about img {
+    display: none;
+  }
+
+  /* FOOTER */
+
+.footer-wrapper {
+  display: block;
+}
+
+.text-footer {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.social {
+  margin-top: 15px;
+  text-align: left;
+  display: block;
+}
+
+
+}
+
+

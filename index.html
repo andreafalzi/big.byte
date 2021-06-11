@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script src="https://kit.fontawesome.com/92c15bccae.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <title>BIG.BYTE</title>
   </head>
+
   <body>
     <nav>
       <ul class="nav">
-        <li><a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a></li>
+        <li>
+          <a href="#home"><img class="logo" src="img/logo.png" alt="logo" /></a>
+        </li>
         <li><a href="burger.html">Burger</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="sponsor.html">Sponsor</a></li>
@@ -31,12 +34,24 @@
       <!-- BURGER MENU END -->
     </nav>
 
-    <main>
-        <section id="about">
-          <h1><i class="fas fa-khanda"></i> Our Quest <i class="fas fa-khanda"></i></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime odit temporibus incidunt voluptatem, iste, ipsum omnis voluptatum minus minima facere fugit in dolores blanditiis vero reprehenderit iure veniam quia sapiente architecto deleniti labore tenetur rerum? Sit architecto nulla laboriosam cum ex. Exercitationem est voluptates accusantium sequi modi, placeat ab?</p>
-          <img src="img/mario-bros-big-byte.jpg" alt="mario-bros-big-byte">
-        </section>
+  <main>
+    <header id="home">
+      <div class="cover">
+        <h1>Fuel for passion</h1>
+      </div>
+      <div class="vidWrapper">
+        <video src="vid/big_byte_home.mp4" controls preload="auto" poster="img/home/cover.jpg"></video>
+      </div>
+    </header>
+
+    <section id="about">
+      <h1><i class="fas fa-khanda"></i> Our Quest <i class="fas fa-khanda"></i></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime odit temporibus incidunt voluptatem, iste,
+        ipsum omnis voluptatum minus minima facere fugit in dolores blanditiis vero reprehenderit iure veniam quia
+        sapiente architecto deleniti labore tenetur rerum? Sit architecto nulla laboriosam cum ex. Exercitationem est
+        voluptates accusantium sequi modi, placeat ab?</p>
+      <img src="img/mario-bros-big-byte.jpg" alt="mario-bros-big-byte">
+    </section>
 
        <!-- CONTACT FORM START v2 -->
 
@@ -312,18 +327,31 @@
   <!-- CONTACT MAP END -->
 
     <section class="last-col">
-        <p>Get feeds from ous social!</p>
-        <label for="email">Your email</label>
-        <input type="email" name="email" id="email">
-        <button>Submit</button>
+      <p>Get feeds from ous social!</p>
+      <label for="email">Your email</label>
+      <input type="email" name="email" id="email" />
+      <button>Submit</button>
     </section>
-
-    <footer>
-        <a href="index.html"><img src="img/logo_white_no_bg.png" alt="logo"></a>
-    </footer>
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="script.js"></script>
     
-  </body>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="logo-footer footer-col">
+          <a href="#home"><img src="img/logo_white_no_bg.png" alt="logo-burger" /></a>
+        </div>
+        <div class="text-footer footer-col">&copy;Big.Byte 2021 // London // <a href="#">info@bigbyte.com</a></div>
+        <div class="social footer-col">
+          <a href="https://discord.com" target="blank"><i class="fab fa-discord"></i></a>
+          <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://instagram.com" target="blank"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://youtube.com" target="blank"><i class="fab fa-youtube-square"></i></a>
+          <a href="https://bitcoin.com" target="blank"><i class="fab fa-bitcoin"></i></a>
+          <a href="https://reddit.com" target="blank"><i class="fab fa-reddit-square"></i></a>
+          <a href="https://github.com" target="blank"><i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+    </footer>
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/script.js"></script>
+</body>
 </html>
