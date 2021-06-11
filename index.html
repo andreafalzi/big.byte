@@ -41,14 +41,15 @@
        <!-- CONTACT FORM START -->
 
   <section id="contact">
-    <h1>Contact</h1>
-    <form id="contact-form">
+    <h1 class="ContactH1">Contact Us</h1>
+    <form class="contact-center" id="contactform" action="mailto:daniel.svendsen.dk@gmail.com" method="post" enctype="text/plain">
+    <div class="contact-center">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" required placeholder="">
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" required placeholder="">
     <label for="email">E-mail</label>
-    <input type="text" id="email" name="email" required placeholder="">
+    <input type="email" id="email" name="email" required placeholder="">
     <label for="country">Country</label>
     <select id="country" name="country" class="form-control">
       <option value="Afghanistan">Afghanistan</option>
@@ -298,13 +299,14 @@
     </select>
     
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" required placeholder="" width="600" height="500"></textarea>
-    <input type="submit" value="Submit">
-    </form>
-  
+    <textarea id="subject" name="subject" required placeholder="" style="height: 150px;"></textarea>
+    </div>
+    <div class="contact-center"><input id="Submit" onmouseover="SubmitHoverIn()" onclick="Submit()" type="submit" value="Submit"></div> 
+  </form>
+   
   <!-- CONTACT FORM END -->
   <!-- CONTACT MAP START -->
-  <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17632.655517967796!2d9.4484492!3d56.4663494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be49bbbedfe9b%3A0xe25d8ea6a774bab!2sMedieskolerne!5e0!3m2!1sda!2sdk!4v1623238388687!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+  <div class="contact-center" id="map"><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17632.655517967796!2d9.4484492!3d56.4663494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be49bbbedfe9b%3A0xe25d8ea6a774bab!2sMedieskolerne!5e0!3m2!1sda!2sdk!4v1623238388687!5m2!1sda!2sdk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </section>
 </main>
   <!-- CONTACT MAP END -->
@@ -322,5 +324,6 @@
 
     <!-- JAVASCRIPT FILES -->
     <script src="script.js"></script>
+    
   </body>
 </html>

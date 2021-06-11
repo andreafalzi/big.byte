@@ -1,16 +1,36 @@
-#contact-form {
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin: 50px;
-    padding-top: 15vh;
-    padding-right: 50%;
+#contact {
+  font-family: Poppins, sans-serif;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "h1 h1"
+    "form map"
 }
 
-input[type=text], select, textarea {
+.ContactH1 {
+  color: rgb(255, 255, 255);
+  position: relative;
+  grid-area: h1;
+  margin: auto;
+  font-size: 3rem;
+}
+
+#contactform {
+    color: rgb(255, 255, 255);
+    grid-area: form;
+    margin: 50px;
+    margin-right: 2%;
+    font-size: 1rem;
+}
+
+input[type=text],input[type=email],  select, textarea {
     width: 100%;
+    font-size: 1rem;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -18,46 +38,109 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #14A642;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px 0px 15px 0px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
   }
 
   #map {
-      position: relative;
-      margin-top: -531px;
-      margin-left: 742px;
-  }
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 38px;
+    padding-top: 0rem;
+    height: 53.4vh;
+    width: 32vw;
+}
+
+  @media screen and (min-width: 200px) and (max-width: 769px) {
+    #contact {
+      font-family: Poppins, sans-serif;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "h1 h1"
+        "form form"
+        "map map"
+    }
+
+    .ContactH1 {
+      font-size: 2rem;
+    }
+
+    #contactform {
+      color: rgb(255, 255, 255);
+      grid-area: form;
+      margin: 50px;
+      margin-left: 6vw;
+      margin-right: 2%;
+      font-size: 1rem;
+     }
   
-  @media only screen and (min-width: 960px) {
-    #contact-form {
-        margin: 50px;
-        padding-top: 15vh;
-        padding-right: 50%;
+    input[type=submit] {
+      background-color: #14A642;
+      display: inline-block;
+      color: white;
+      padding: 18px 33vw;
+      margin-top: 0.1rem;
+      border: none;
+      border-radius: 15px 0px 15px 0px;
+      cursor: pointer;
+    }
+
+    .contact-center {
+      text-align: center;
     }
 
     #map {
-        margin-top: -61.85vh;
-        margin-left: 53%;
-    }
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 0.1rem;
+      height: 50vh;
+      width: 88.8vw;
+  }
   }
 
-  @media only screen and (max-device-width: 480px) {
-    #contact-form {
-        margin: 20px;
-        padding-top: 10vh;
-        padding-right: 0%;
+  @media screen and (min-width: 769px){
+    .ContactH1 {
+      font-size: 3rem;
+    }
+
+    #contactform {
+      color: rgb(255, 255, 255);
+      grid-area: form;
+      margin: 30px;
+      margin-left: 6vw;
+      margin-right: 0.1vw;
+      font-size: 1.1rem;
+      text-align: left !important;
+     }
+  
+    input[type=submit] {
+      background-color: #14A642;
+      display: inline-block;
+      color: white;
+      padding: 18px 10vw;
+      margin-top: 0.1rem;
+      border: none;
+      border-radius: 15px 0px 15px 0px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .contact-center {
+      text-align: center;
     }
 
     #map {
-        margin-top: -531px;
-        margin-left: 742px;
-    }
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 1.3rem;
+      padding-right: 58vw;
+      height: 536px;
+      width: 88.8vw;
+  }
   }
