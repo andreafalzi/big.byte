@@ -11,7 +11,6 @@ document.onclick = function (e) {
   }
 };
 
-
 /* --- Contact E-mail --- */
 const email = document.getElementById("email");
 
@@ -33,3 +32,4 @@ function SubmitHoverIn(){
     x.style.backgroundColor = "#14A642";
 }, 1000);
 }
+
