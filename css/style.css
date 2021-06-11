@@ -142,9 +142,9 @@ li span{
   padding: 5px 0;
   border-radius: 6px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   top: 15px;
-  left: 128%;
+  left: 170%;
 }
 
 .links:hover .hoverText{
