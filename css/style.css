@@ -36,6 +36,26 @@ body {
   overflow: hidden;
 }
 
+/* SCROLLBAR STYLING */
+
+main::-webkit-scrollbar {
+  width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2f3136; 
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #202225; 
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: #20222570; 
+}
+
 h1,
 h2,
 h3,
@@ -91,6 +111,23 @@ main {
   background-color: var(--tir-bg-color);
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #202225 #2f3136;
+}
+
+/* SECTION HOME */
+
+.cover h1{
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  color: var(--pri-text-color);
+  text-transform: uppercase;
+  
+  text-align: center;
+}
+
+.vidWrapper video{
+  width: 100%;
 }
 
 /* section about */
