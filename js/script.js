@@ -23,13 +23,12 @@ email.addEventListener("input", function (event) {
 });
 
 /* --- Contact Submit OnMouseover --- */
-function SubmitHoverIn(){
+function SubmitHoverIn() {
   var x = document.getElementById("Submit");
   x.style.transition = "all 2s";
   x.style.backgroundColor = "#0a5c24";
-  setTimeout(function(){
+  setTimeout(function () {
     x.style.transition = "all 2s";
     x.style.backgroundColor = "#14A642";
-}, 1000);
+  }, 1000);
 }
-
