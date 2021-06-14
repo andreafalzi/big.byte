@@ -252,6 +252,7 @@ section#burger h1 {
 .burger-content-title h2 {
   font-size: 3rem;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .burger-content-text p {
