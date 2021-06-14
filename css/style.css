@@ -24,9 +24,9 @@ font-family: 'Press Start 2P', cursive;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* html {
+  scroll-behavior: smooth; it has to be placed where the actual scroll happen(moved inside main)
+} */
 
 body {
   font-size: 62.5%;
@@ -185,6 +185,7 @@ main {
   background-color: var(--tir-bg-color);
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #202225 #2f3136;
 }
