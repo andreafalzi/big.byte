@@ -380,6 +380,23 @@
     </main>
     <!-- CONTACT MAP END -->
 
+    <section>
+      <button id="open-chat" onclick="openChatForm()"><i class="far fa-comment fa-4x"></i></button>
+
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1 class="chat-text">Feedback</h1>
+
+            <label class="we-are-online" for="msg"><b>Your feedback help us to improve.</b></label>
+            <textarea id="FeedbackArea" placeholder="Send feedback here.." name="msg" required></textarea>
+
+            <button onclick="SendFeedback()" type="button" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeChatForm()">Close</button>
+          </form>
+        </div>
+
+    </section>
+
     <section class="last-col">
       <iframe src="https://titanembeds.com/embed/848883480301666324?css=262&defaultchannel=848883480750194692&noscroll=true&scrollbartheme=dark-thin&theme=DiscordDark" height="600" width="270" frameborder="0"></iframe>
     </section>

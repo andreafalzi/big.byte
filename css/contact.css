@@ -144,3 +144,116 @@ input[type=text],input[type=email],  select, textarea {
       width: 88.8vw;
   }
   }
+
+    #open-chat {
+      background-color: #202225;
+      border-radius: 50px;
+      color: #14A642;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 80px;
+      right: 30px;
+      width: 90px;
+      z-index: 10;
+    }
+
+    .open-chat:hover {
+      transition: 0.5s;
+      background-color: #14A642;
+      color: white;
+      border-radius: 25px;
+    }
+
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 8vh;
+      right: 1vw;
+      z-index: 9;
+    }
+
+
+    .form-container {
+      max-width: 400px;
+      padding: 30px;
+      background-color: #202225;
+      color: #fff;
+      text-align: center;
+      border-radius: 25px;
+    }
+    .chat-text{
+      font-size: 3.2rem;
+    }
+
+    .we-are-online{
+      font-size: 1.2rem;
+    }
+
+
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #2e3033;
+      resize: none;
+      min-height: 300px;
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+
+
+    .form-container textarea:focus {
+      background-color: #2e3033;
+      outline: none;
+    }
+
+
+    .form-container .btn {
+      background-color: #14A642;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 80%;
+      margin-bottom:10px;
+      opacity: 0.8;
+      border-radius: 25px;
+    }
+
+
+    .form-container .cancel {
+      background-color: red;
+    }
+
+
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 480px){
+      .open-chat {
+        bottom: 40px;
+        right: 15px;
+      }
+      .chat-popup {
+        bottom: 10vh;
+        right: 8.5vw;
+      }
+    }
+
+    @media (max-width: 380px){
+      .open-chat {
+        bottom: 550px;
+        right: 15px;
+      }
+
+      .chat-popup {
+        bottom: 10vh;
+        right: 1vw;
+      }
+    }
