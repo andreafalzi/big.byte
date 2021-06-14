@@ -218,7 +218,7 @@ section#burger h1 {
 
 .burger-slider-container {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -273,7 +273,7 @@ section#burger h1 {
 }
 
 .burger-active {
-  display: inline-block;
+  display: inline;
 }
 
 .burger-hidden {
@@ -431,6 +431,7 @@ section#partners .card-text-button {
   padding: 12px 20px;
   box-shadow: inset 0px 0px 0px var(--pri-text-color);
   transition: all 1s !important;
+  cursor: pointer;
 }
 
 section#partners .card-text-button:hover {
@@ -543,6 +544,17 @@ footer img {
   }
 
   /* SECTION */
+  /* section burger */
+  .burger-content-title h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.burger-content-text p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+}
+
   /* section partners */
   section#partners .card-text-paragraph p {
     display: none;
@@ -598,6 +610,10 @@ footer img {
     margin-bottom: 20px;
   }
 
+  .burger-container {
+  margin-bottom: 0;
+}
+
   .burger-container-card {
   display: block;
 }
@@ -614,16 +630,19 @@ footer img {
 }
 
 .burger-button {
-  text-align:unset;
+  text-align:initial;
 }
 
 .btn-burger {
   position: absolute;
   top: 40%;
+  transform: rotate(-90deg);
+  transform-origin: 20% 50%;
 }
 
 .btn-burger-next {
   right: 0;
+  transform-origin: 53% -23%;
 }
 
   /* section about */
