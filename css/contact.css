@@ -55,7 +55,7 @@ input[type=text],input[type=email],  select, textarea {
     width: 32vw;
 }
 
-  @media (max-width: 769px) {
+  @media (max-width: 770px) {
     #contact {
       font-family: Poppins, sans-serif;
       display: grid;
@@ -76,7 +76,7 @@ input[type=text],input[type=email],  select, textarea {
       grid-area: form;
       margin: 50px;
       margin-left: 6vw;
-      margin-right: 2%;
+      margin-right: 30px;
       font-size: 1rem;
      }
   
