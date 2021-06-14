@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script src="https://kit.fontawesome.com/92c15bccae.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>BIG.BYTE</title>
   </head>
   <body>
     <nav>
       <ul class="nav">
+        <li class="navTitle">
+          <a href="#home"><p>BIG.BYTE</p></a>
+        </li>
 
-        <li class="navTitle"><a href="#home"><p>BIG.BYTE</p></a></li>
-
-        <li class="links"><a href="#burger" ><img src="img/nav/burger_solo.png" alt="" width="50" ></a><span class="hoverText">Burgers</span></li>
-        <li class="links"><a href="#about" ><i class="fas fa-info"></i></a><span class="hoverText">About</span></li>
-        <li class="links"><a href="#partners"><i class="fas fa-handshake"></i></a><span class="hoverText">Partners</span></li>
-        <li class="links"><a href="#contact" ><i class="fas fa-at"></i></a><span class="hoverText">Contact</span></li>
+        <li class="links">
+          <a href="#burger"><img src="img/nav/burger_solo.png" alt="" width="50" /></a><span class="hoverText">Burgers</span>
+        </li>
+        <li class="links">
+          <a href="#about"><i class="fas fa-info"></i></a><span class="hoverText">About</span>
+        </li>
+        <li class="links">
+          <a href="#partners"><i class="fas fa-handshake"></i></a><span class="hoverText">Partners</span>
+        </li>
+        <li class="links">
+          <a href="#contact"><i class="fas fa-at"></i></a><span class="hoverText">Contact</span>
+        </li>
         <li><i id="burgerMenu" onclick="showMenu()" class="burger fas fa-bars"></i></li>
       </ul>
 
@@ -41,6 +50,77 @@
           <video src="vid/big_byte_home.mp4" controls preload="auto" poster="img/home/cover.jpg"></video>
         </div>
       </header>
+
+      <!-- SECTION BURGER -->
+      <section id="burger">
+        <h1><i class="fas fa-hamburger"></i> Burger <i class="fas fa-hamburger"></i></h1>
+        <div class="burger-slider-container">
+          <div class="burger-container">
+            <div id="beefCard" class="burger-active">
+              <div class="burger-container-card">
+                <div class="burger-col-1">
+                  <div class="burger-img">
+                    <img src="http://unsplash.it/500/500" alt="random" class="" />
+                  </div>
+                </div>
+                <div class="burger-col-2">
+                  <div class="burger-content">
+                    <div class="burger-content-title">
+                      <h2>Beef</h2>
+                    </div>
+                    <div class="burger-content-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus magnam recusandae earum assumenda eveniet, vel corrupti nisi. Ipsa, in dolorem, distinctio odit nemo inventore libero ab ullam aliquid mollitia corrupti odio quaerat amet sequi. Minima fugit iste exercitationem maxime magnam id reiciendis consequatur libero animi harum. Eaque, hic sed nulla laboriosam odit sit. Reiciendis in explicabo molestias.reiciendis voluptas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="veggieCard" class="burger-hidden">
+              <div class="burger-container-card">
+                <div class="burger-col-1">
+                  <div class="burger-img">
+                    <img src="http://unsplash.it/501/500" alt="random" class="" />
+                  </div>
+                </div>
+                <div class="burger-col-2">
+                  <div class="burger-content">
+                    <div class="burger-content-title">
+                      <h2>Veggie</h2>
+                    </div>
+                    <div class="burger-content-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus magnam recusandae earum assumenda eveniet, vel corrupti nisi. Ipsa, in dolorem, distinctio odit nemo inventore libero ab ullam aliquid mollitia corrupti odio quaerat amet sequi. Minima fugit iste exercitationem maxime magnam id reiciendis consequatur libero animi harum. Eaque, hic sed nulla laboriosam odit sit. Reiciendis in explicabo molestias.reiciendis voluptas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="chickenCard" class="burger-hidden">
+              <div class="burger-container-card">
+                <div class="burger-col-1">
+                  <div class="burger-img">
+                    <img src="http://unsplash.it/502/500" alt="random" class="" />
+                  </div>
+                </div>
+                <div class="burger-col-2">
+                  <div class="burger-content">
+                    <div class="burger-content-title">
+                      <h2>Chicken</h2>
+                    </div>
+                    <div class="burger-content-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus magnam recusandae earum assumenda eveniet, vel corrupti nisi. Ipsa, in dolorem, distinctio odit nemo inventore libero ab ullam aliquid mollitia corrupti odio quaerat amet sequi. Minima fugit iste exercitationem maxime magnam id reiciendis consequatur libero animi harum. Eaque, hic sed nulla laboriosam odit sit. Reiciendis in explicabo molestias.reiciendis voluptas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="burger-button">
+            <div id="chickenButton" onclick="toChicken()" class="burger-active"><button id="chickenButtonBtn" class="btn-burger">Chicken</button></div>
+            <div id="veggieButton" onclick="toVeggie()" class="burger-active"><button id="veggieButtonBtn" class="btn-burger btn-burger-next">Veggie</button></div>
+            <div id="beefButton" onclick="toBeef()" class="burger-hidden"><button id="beefButtonBtn" class="btn-burger">Beef</button></div>
+          </div>
+        </div>
+      </section>
 
       <!-- SECTION ABOUT -->
       <section id="about">
