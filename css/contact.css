@@ -76,7 +76,7 @@ input[type=text],input[type=email],  select, textarea {
       grid-area: form;
       margin: 50px;
       margin-left: 6vw;
-      margin-right: 2%;
+      margin-right: 6vw;
       font-size: 1rem;
      }
   
@@ -113,8 +113,8 @@ input[type=text],input[type=email],  select, textarea {
       color: rgb(255, 255, 255);
       grid-area: form;
       margin: 30px;
-      margin-left: 6vw;
-      margin-right: 0.1vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
       font-size: 1.1rem;
       text-align: left !important;
      }
@@ -141,7 +141,7 @@ input[type=text],input[type=email],  select, textarea {
       margin-top: 1.3rem;
       padding-right: 58vw;
       height: 536px;
-      width: 88.8vw;
+      width: 145vw;
   }
   }
 
