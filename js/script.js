@@ -1,3 +1,21 @@
+/* DROPDOWN MENU */
+function giveBurgers() {
+  document.getElementById("subLinks").classList.toggle("show");
+}
+
+/* ACTIVE LINKS */
+var navBar = document.getElementById("nav");
+var links = navBar.getElementsByClassName("links");
+
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
 /* --- Show Menu --- */
 function showMenu() {
   var x = document.getElementById("menu");
@@ -10,6 +28,7 @@ document.onclick = function (e) {
     x.classList.remove("responsive");
   }
 };
+
 
 /* --- Contact E-mail --- */
 const email = document.getElementById("email");
