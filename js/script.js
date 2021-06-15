@@ -64,11 +64,46 @@ function closeChatForm() {
 }
 
 function SendFeedback() {
+  if(document.getElementById("FeedbackArea").value == "") {
+    document.getElementById("FeedbackArea").value = "You can't send an empty message"; 
+    setTimeout(function(){ 
+      document.getElementById("FeedbackArea").value = ""; 
+    }, 2500);
+  }
+
+  else if(document.getElementById("FeedbackArea").value == "You can't send an empty message"){
+
+    document.getElementById("FeedbackArea").value = "You can't not send that";
+    setTimeout(function(){ 
+      document.getElementById("FeedbackArea").value = ""; 
+    }, 2500);
+  }
+
+  else if(document.getElementById("FeedbackArea").value == "You can't not send that"){
+
+    document.getElementById("FeedbackArea").value = "You can't not send that";
+    setTimeout(function(){ 
+      document.getElementById("FeedbackArea").value = ""; 
+    }, 2500);
+  }
+
+    else {
   document.getElementById("FeedbackArea").value = "Thank you for your feedback..";
   setTimeout(function(){ 
     document.getElementById("FeedbackArea").value = ""; 
   }, 2500);
 }
+}
+
+/*
+  if(document.getElementById("FeedbackArea").value == "You can't send an empty message"){
+
+    document.getElementById("FeedbackArea").value = "You can't not send that";
+    setTimeout(function(){ 
+      document.getElementById("FeedbackArea").value = ""; 
+    }, 2500);
+  }
+  */
 
 
 /* Burger Switch */
