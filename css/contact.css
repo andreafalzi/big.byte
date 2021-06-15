@@ -14,7 +14,7 @@ font-family: 'Press Start 2P', cursive;
 }
 
 #contact {
-  font-family: Poppins, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -24,10 +24,13 @@ font-family: 'Press Start 2P', cursive;
 }
 
 .ContactH1 {
+  font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   position: relative;
   grid-area: h1;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
   font-size: 3rem;
 }
 
@@ -53,7 +56,7 @@ input[type=text],input[type=email],  select, textarea {
   }
   
   input[type=submit] {
-    font-family: Poppins, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     background-color: #14A642;
     color: white;
     padding: 12px 20px;
@@ -161,7 +164,15 @@ input[type=text],input[type=email],  select, textarea {
   }
   }
     #open-feedback {
+      font-family: "Fira Sans", sans-serif;
+    }
+
+    #open-feedback h1{
       font-family: Poppins, sans-serif;
+    }
+    #open-feedback label{
+      font-family: Poppins, sans-serif;
+      font-size: 1rem;
     }
 
     /* @media (min-height: 500px){
@@ -264,7 +275,7 @@ input[type=text],input[type=email],  select, textarea {
       font-size: 3.2rem;
     }
 
-    .we-are-online{
+    .sendfeeback{
       font-size: 1.2rem;
     }
 
@@ -290,6 +301,7 @@ input[type=text],input[type=email],  select, textarea {
 
 
     .form-container .btn {
+      font-family: "Fira Sans", sans-serif;
       background-color: #14a642;
       color: white;
       padding: 16px 20px;
@@ -303,6 +315,7 @@ input[type=text],input[type=email],  select, textarea {
 
 
     .form-container .cancel {
+      font-family: "Fira Sans", sans-serif;
       background-color: red;
     }
 
