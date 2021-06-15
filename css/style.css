@@ -68,6 +68,7 @@ h4 {
 
 p {
   font-size: 1.6rem;
+  line-height: 140%;
 }
 
 a {
@@ -352,6 +353,7 @@ section#burger h1 {
   font-size: 3rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4rem;
 }
 
 .burger-content-text p {
@@ -535,6 +537,7 @@ section#partners .card-text-button {
   box-shadow: inset 0px 0px 0px var(--pri-text-color);
   transition: all 1s !important;
   cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
 }
 
 section#partners .card-text-button:hover {
@@ -746,6 +749,10 @@ footer img {
 /* phone size */
 @media (max-width: 480px) {
   /* section burger */
+  section#burger {
+    padding: 20px 20px;
+  }
+
   section#burger h1 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -760,7 +767,7 @@ footer img {
   }
 
   .burger-content-title h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
   }
 
