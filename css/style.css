@@ -123,6 +123,30 @@ li.links:hover{
   color: #f2f2f2;
 }
 
+li.links:hover .line{
+  display: block;
+}
+
+/* li.links:active .line{
+  display: block;
+  height: 55px;
+  bottom: 8px;
+  transition: 0.3s ease;
+} */
+
+.active .line{
+  display: block;
+  height: 55px;
+  bottom: 8px;
+  transition: 0.3s ease;
+}
+
+.active li.links{
+  border-radius: 20px;
+  background-color: #14a642;
+  color: #f2f2f2;
+}
+
 li.links a:hover{
   color: #f2f2f2;
 }
@@ -178,6 +202,79 @@ li a {
 i.burger {
   display: none;
 }
+
+.line{
+  display: none;
+  border-left: 9px solid #f2f2f2;
+  height: 28px;
+  border-radius: 6px;
+  position: absolute;
+  left: -27%;
+  bottom: 22px;
+  z-index: 99;
+}
+
+.subMenu{
+  position: relative;
+  display: inline-block;
+}
+
+.subLinks{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+  background-color: var(--sec-bg-color);
+  border-radius: 10px;
+  width: 250px;
+  height: 75vh;
+  opacity: 96%;
+  padding: 20px;
+  left: 0;
+}
+
+.subLinks li{
+  margin-top: 10px;
+}
+
+.subMenu .subLinks li a{
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--pri-text-color);
+  text-decoration: none;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.subMenuTop li:hover{
+  background-color: var(--pri-bg-color);
+  border-radius: 5px;
+}
+
+.subLinks span{
+  font-size: 1rem;
+}
+
+.subMenuBottom{
+  padding-top: 30%;
+}
+
+.subMenu .subLinks .subMenuBottom li{
+  font-family: 'Fira Sans', sans-serif;
+  color: #f2f2f270;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.show{
+  display: flex;
+  top: 1%;
+  left: 122%;
+}
+
+
 
 /* MAIN */
 main {

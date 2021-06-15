@@ -13,13 +13,31 @@
 
   <body>
     <nav>
-      <ul class="nav">
+      <ul id="nav" class="nav">
         <li class="navTitle"><a href="#home"><p>BIG.BYTE</p></a></li>
 
-        <li class="links"><a href="#burger" ><img src="img/nav/burger_solo.png" alt="" width="50" ></a><span class="hoverText">Burgers</span></li>
-        <li class="links"><a href="#about" ><i class="fas fa-info"></i></a><span class="hoverText">About</span></li>
-        <li class="links"><a href="#partner"><i class="fas fa-handshake"></i></a><span class="hoverText">Partners</span></li>
-        <li class="links"><a href="#contact" ><i class="fas fa-at"></i></a><span class="hoverText">Contact</span></li>
+        <li id="subMenu" class="links subMenu active" onclick="giveBurgers()"><a href="#burger"><div class="line"></div><img src="img/nav/burger_solo.png" alt="" width="50" ></a><span class="hoverText">Burgers</span> 
+          <ul id="subLinks" class="subLinks">
+
+            <div class="subMenuTop">
+              <span>SELECT A BURGER</span>
+              <li><a href="#beef"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;beef</a></li>
+              <li><a href="#chicken"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;chicken</a></li>
+              <li><a href="#veggie"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;veggie</a></li>
+            </div>
+
+            <div class="subMenuBottom">
+              <span>IN DEVELOPMENT</span>
+              <li class="dev"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;fish</li>
+              <li class="dev"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;venison</li>
+              <li class="dev"><i class="fas fa-hashtag"></i>&nbsp;&nbsp;pork</li>
+            </div>
+
+          </ul>
+        </li>
+        <li class="links"><a href="#about"><div class="line"></div><i class="fas fa-info"></i></a><span class="hoverText">About</span></li>
+        <li class="links"><a href="#partner"><div class="line"></div><i class="fas fa-handshake"></i></a><span class="hoverText">Partners</span></li>
+        <li class="links"><a href="#contact" ><div class="line"></div><i class="fas fa-at"></i></a><span class="hoverText">Contact</span></li>
         <li><i id="burgerMenu" onclick="showMenu()" class="burger fas fa-bars"></i></li>
       </ul>
 
