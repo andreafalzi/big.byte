@@ -29,6 +29,9 @@
         <li class="links">
           <a href="#contact"><i class="fas fa-at"></i></a><span class="hoverText">Contact</span>
         </li>
+        <li class="links" id="chat">
+          <a id="open-chat" onclick="openChatForm()"><i class="far fa-comment"></i></a>
+        </li>
         <li><i id="burgerMenu" onclick="showMenu()" class="burger fas fa-bars"></i></li>
       </ul>
 
@@ -460,8 +463,8 @@
     </main>
     <!-- CONTACT MAP END -->
 
-    <section>
-      <button id="open-chat" onclick="openChatForm()"><i class="far fa-comment fa-4x"></i></button>
+     <!-- CHAT/FEEDBACK -->
+     <section id="open-feedback">
 
         <div class="chat-popup" id="myForm">
           <form action="/action_page.php" class="form-container">
@@ -474,8 +477,8 @@
             <button type="button" class="btn cancel" onclick="closeChatForm()">Close</button>
           </form>
         </div>
-
     </section>
+    <!-- CHAT/FEEDBACK -->
 
     <section class="last-col">
       <iframe src="https://titanembeds.com/embed/848883480301666324?css=262&defaultchannel=848883480750194692&noscroll=true&scrollbartheme=dark-thin&theme=DiscordDark" height="600" width="270" frameborder="0"></iframe>

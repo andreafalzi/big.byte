@@ -1,3 +1,18 @@
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Press Start 2P', cursive; 
+*/
+
+/* VARIABLES */
+:root {
+  --pri-bg-color: #202225;
+  --sec-bg-color: #2f3136;
+  --tir-bg-color: #36393f;
+  --for-bg-color: #292b2f;
+  --pri-text-color: #f2f2f2;
+}
+
 #contact {
   font-family: Poppins, sans-serif;
   display: grid;
@@ -144,19 +159,78 @@ input[type=text],input[type=email],  select, textarea {
       width: 145vw;
   }
   }
+    #open-feedback {
+      font-family: Poppins, sans-serif;
+    }
+
+    /* @media (min-height: 500px){
+    ul #chat{
+      margin-top: 30px;
+    }
+    }
+    @media (min-height: 600px){
+    ul #chat{
+      margin-top: 100px;
+    }
+    }
+    @media (min-height: 700px){
+    ul #chat{
+      margin-top: 200px;
+    }
+    }
+    @media (min-height: 800px){
+    ul #chat{
+      margin-top: 300px;
+    }
+    }
+    @media (min-height: 900px){
+    ul #chat{
+      margin-top: 400px;
+    }
+    }
+    @media (min-height: 1000px){
+    ul #chat{
+      margin-top: 500px;
+    }
+    }
+    @media (min-height: 1100px){
+    ul #chat{
+      margin-top: 600px;
+    }
+    }
+    @media (min-height: 1200px){
+    ul #chat{
+      margin-top: 700px;
+    }
+    }
+    @media (min-height: 1300px){
+    ul #chat{
+      margin-top: 800px;
+    }
+    }
+    @media (min-height: 1400px){
+    ul #chat{
+      margin-top: 900px;
+    }
+    }
+    @media (min-height: 1500px){
+    ul #chat{
+      margin-top: 1000px;
+    }
+    }
+    @media (min-height: 1600px){
+    ul #chat{
+      margin-top: 1100px;
+    }
+    } */
+
 
     #open-chat {
-      background-color: #202225;
-      border-radius: 50px;
-      color: #14A642;
+      padding-top: 100px;
       padding: 16px 20px;
       border: none;
       cursor: pointer;
       opacity: 0.8;
-      position: fixed;
-      bottom: 80px;
-      right: 30px;
-      width: 90px;
       z-index: 10;
     }
 
@@ -168,10 +242,11 @@ input[type=text],input[type=email],  select, textarea {
     }
 
     .chat-popup {
+      transition: 5s;
       display: none;
       position: fixed;
       bottom: 8vh;
-      right: 1vw;
+      left: 8vw;
       z-index: 9;
     }
 
@@ -214,7 +289,7 @@ input[type=text],input[type=email],  select, textarea {
 
 
     .form-container .btn {
-      background-color: #14A642;
+      background-color: #14a642;
       color: white;
       padding: 16px 20px;
       border: none;
