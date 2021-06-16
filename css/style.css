@@ -14,6 +14,9 @@ font-family: 'Press Start 2P', cursive;
   --tir-bg-color: #36393f;
   --for-bg-color: #292b2f;
   --pri-text-color: #f2f2f2;
+  --veggie-color: #14a642;
+  --beef-color: #ff1919;
+  --chicken-color: #f5d001;
 }
 
 /* CSS RESETS AND BEHAVIOUR */
@@ -312,6 +315,7 @@ main {
 
 .vidWrapper video {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 /* section burger */
@@ -368,7 +372,7 @@ section#burger h1 {
 
 .burger-content-text p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .burger-button {
@@ -376,15 +380,22 @@ section#burger h1 {
 }
 
 .btn-burger {
-  padding: 5px 8px;
-  font-size: 1.2rem;
-  font-family: "Fira Sans", sans-serif;
+  border-radius: 5px;
+  min-width: 200px;
+  margin-top: 25px;
+  font-size: 1.6rem;
   text-transform: uppercase;
-  min-width: 100px;
+  background-color: unset;
+  padding: 12px 20px;
   cursor: pointer;
-  background-color: var(--for-bg-color);
   color: var(--pri-text-color);
-  border: 1px solid var(--for-bg-color);
+  font-family: "Fira Sans", sans-serif;
+  box-shadow: 0 9px #999;
+}
+
+.btn-burger:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .burger-active {
@@ -393,6 +404,23 @@ section#burger h1 {
 
 .burger-hidden {
   display: none;
+}
+
+#chickenButton button {
+  background-color: var(--chicken-color);
+  color: var(--pri-bg-color);
+  border: 1px solid var(--chicken-color);
+  margin: 0 15px;
+}
+#veggieButton button {
+  background-color: var(--veggie-color);
+  border: 1px solid var(--veggie-color);
+  margin: 0 15px;
+}
+#beefButton button {
+  background-color: var(--beef-color);
+  border: 1px solid var(--beef-color);
+  margin: 0 15px;
 }
 
 /* section about */
@@ -409,6 +437,7 @@ section#about h1 {
 
 section#about p {
   font-family: "Fira Sans", sans-serif;
+  text-align: left;
 }
 
 section#about img {
@@ -530,18 +559,17 @@ section#partners .card-text-title h4 {
 
 section#partners .card-text-paragraph p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   text-align: left;
   word-spacing: 0.3rem;
-  line-height: 1.4rem;
 }
 
 section#partners .card-text-button {
   border: 1px solid var(--pri-text-color);
   border-radius: 5px;
   width: max-content;
-  margin-top: 25px;
-  font-size: 1.4rem;
+  margin-top: 10px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   padding: 12px 20px;
   box-shadow: inset 0px 0px 0px var(--pri-text-color);
@@ -561,6 +589,12 @@ section.last-col {
   border-left: 1px solid rgb(129, 129, 129);
 }
 
+#sideLogo{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  color: var(--pri-text-color);
+}
+
 .feed-box {
   margin: 0 10px;
   height: 100%;
@@ -570,6 +604,7 @@ section.last-col {
 
 .feed-box-link {
   padding: 20px 0;
+  align-items: baseline;
 }
 
 .feed-box-link span {
@@ -698,7 +733,17 @@ footer img {
 
   .burger-content-text p {
     font-family: "Fira Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-burger {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /* section partners */
+  section#about p {
+    font-size: 1.2rem;
   }
 
   /* section partners */
@@ -727,7 +772,7 @@ footer img {
     border-radius: 5px;
     width: max-content;
     margin-top: 25px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     padding: 12px 20px;
   }
@@ -783,24 +828,29 @@ footer img {
 
   .burger-content-text p {
     display: none;
-    /* font-size: 1rem;
-  margin-top: 20px; */
   }
 
   .burger-button {
     text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
   }
 
   .btn-burger {
-    position: absolute;
-    top: 40%;
-    transform: rotate(-90deg);
-    transform-origin: 20% 50%;
+    min-width: 150px;
+    padding: 5px 8px;
+    font-size: 1rem;
   }
 
-  .btn-burger-next {
-    right: 0;
-    transform-origin: 50% -40%;
+  #chickenButton button {
+    margin: 0;
+  }
+  #veggieButton button {
+    margin: 0;
+  }
+  #beefButton button {
+    margin: 0;
   }
 
   /* section about */
@@ -829,6 +879,9 @@ footer img {
   section#partners h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+  }
+
+  section#partners img {
   }
 
   section#partners .card-item {

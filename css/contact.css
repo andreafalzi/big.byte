@@ -57,6 +57,7 @@ input[type=text],input[type=email],  select, textarea {
   
   input[type=submit] {
     font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
     background-color: #14A642;
     border: none;
     width: 10vw;
@@ -282,6 +283,7 @@ input[type=text],input[type=email],  select, textarea {
       color: #fff;
       text-align: center;
       border-radius: 10px;
+      z-index: 5;
     }
     .chat-text{
       font-size: 3.2rem;
