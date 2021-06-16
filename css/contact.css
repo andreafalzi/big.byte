@@ -58,13 +58,21 @@ input[type=text],input[type=email],  select, textarea {
   input[type=submit] {
     font-family: "Fira Sans", sans-serif;
     background-color: #14A642;
-    color: white;
-    padding: 12px 20px;
     border: none;
     width: 10vw;
-    border-radius: 15px 0px 15px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 12px 20px;
     cursor: pointer;
+    color: var(--pri-text-color);
+    font-family: "Fira Sans", sans-serif;
+    box-shadow: 0 9px #999;
   }
+
+  input[type=submit]:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }  
 
   #map {
     margin-left: 2%;
@@ -168,11 +176,15 @@ input[type=text],input[type=email],  select, textarea {
     }
 
     #open-feedback h1{
-      font-family: Poppins, sans-serif;
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
     #open-feedback label{
-      font-family: Poppins, sans-serif;
-      font-size: 1rem;
+      display: none;
     }
 
     /* @media (min-height: 500px){
@@ -264,12 +276,12 @@ input[type=text],input[type=email],  select, textarea {
 
 
     .form-container {
-      max-width: 400px;
-      padding: 30px;
-      background-color: #202225;
+      max-width: 320px;
+      padding: 20px;
+      background-color: var(--sec-bg-color);
       color: #fff;
       text-align: center;
-      border-radius: 25px;
+      border-radius: 10px;
     }
     .chat-text{
       font-size: 3.2rem;
@@ -285,38 +297,46 @@ input[type=text],input[type=email],  select, textarea {
       padding: 15px;
       margin: 5px 0 22px 0;
       border: none;
-      background: #2e3033;
+      background: var(--tir-bg-color);
       resize: none;
       min-height: 300px;
       color: #fff;
       font-size: 1rem;
       letter-spacing: 0.1rem;
+      font-family: 'Fira Sans', sans-serif;
     }
 
 
     .form-container textarea:focus {
-      background-color: #2e3033;
+      background-color: var(--tir-bg-color);
       outline: none;
     }
 
 
     .form-container .btn {
-      font-family: "Fira Sans", sans-serif;
-      background-color: #14a642;
-      color: white;
-      padding: 16px 20px;
-      border: none;
+      border-radius: 5px;
+      max-height: 80px;
+      margin-top: 25px;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      background-color: #14A642;
+      padding: 12px 20px;
       cursor: pointer;
-      width: 80%;
-      margin-bottom:10px;
-      opacity: 0.8;
-      border-radius: 25px;
+      color: var(--pri-text-color);
+      font-family: "Fira Sans", sans-serif;
+      box-shadow: 0 9px #999;
+    }
+
+    .form-container .btn:active{
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
     }
 
 
     .form-container .cancel {
       font-family: "Fira Sans", sans-serif;
       background-color: red;
+      margin-right: 20px;
     }
 
 
