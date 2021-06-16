@@ -595,6 +595,12 @@ section.last-col {
   color: var(--pri-text-color);
 }
 
+#discord{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .feed-box {
   margin: 0 10px;
   height: 100%;
@@ -694,7 +700,21 @@ footer img {
   nav ul.nav li:not(:first-child, :last-child) {
     display: none;
   }
+  
+  .nav{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
 
+  .responsive a{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--pri-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
   /* turn the navbar into a flex */
   nav ul {
     height: 50px;
@@ -715,13 +735,22 @@ footer img {
   }
   /* give style to the menu */
   ul#menu.responsive {
-    display: block;
+    display: flex;
+    justify-items: space-around;
     width: 100%;
-    height: 100%;
   }
 
   ul.responsive li {
-    margin: 50px 0;
+    width: 20%;
+    background-color: #14a642;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  /* moving feedback icon */
+  .navBottom{
+    display: none;
   }
 
   /* SECTION */
@@ -803,6 +832,12 @@ footer img {
 
 /* phone size */
 @media (max-width: 480px) {
+
+  /* nav */
+  .responsive a{
+    font-size: 0.7rem;
+  }
+
   /* section burger */
   section#burger {
     padding: 20px 20px;
