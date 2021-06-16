@@ -128,13 +128,6 @@ li.links:hover .line{
   display: block;
 }
 
-/* li.links:active .line{
-  display: block;
-  height: 55px;
-  bottom: 8px;
-  transition: 0.3s ease;
-} */
-
 .active .line{
   display: block;
   height: 55px;
@@ -145,11 +138,6 @@ li.links:hover .line{
 .active li.links{
   border-radius: 20px;
   background-color: #14a642;
-  color: #f2f2f2;
-}
-
-li.links a:hover {
-
   color: #f2f2f2;
 }
 
@@ -819,9 +807,6 @@ footer img {
   section#partners h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-
-  section#partners img {
   }
 
   section#partners .card-item {
