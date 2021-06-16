@@ -14,9 +14,6 @@ font-family: 'Press Start 2P', cursive;
   --tir-bg-color: #36393f;
   --for-bg-color: #292b2f;
   --pri-text-color: #f2f2f2;
-  --veggie-color: #14a642;
-  --beef-color: #ff1919;
-  --chicken-color: #f5d001;
 }
 
 /* CSS RESETS AND BEHAVIOUR */
@@ -145,24 +142,24 @@ li.links:hover {
   color: #f2f2f2;
 }
 
-li.links:hover .line {
+li.links:hover .line{
   display: block;
 }
 
-.active .line {
+.active .line{
   display: block;
   height: 55px;
   bottom: 8px;
   transition: 0.3s ease;
 }
 
-.active li.links {
+li.active{
   border-radius: 20px;
   background-color: #14a642;
   color: #f2f2f2;
 }
 
-li.links a:hover {
+li.active a{
   color: #f2f2f2;
 }
 
@@ -218,7 +215,7 @@ i.burger {
   display: none;
 }
 
-.line {
+.line{
   display: none;
   border-left: 9px solid #f2f2f2;
   height: 28px;
@@ -229,12 +226,12 @@ i.burger {
   z-index: 99;
 }
 
-.subMenu {
+.subMenu{
   position: relative;
   display: inline-block;
 }
 
-.subLinks {
+.subLinks{
   display: none;
   position: absolute;
   flex-direction: column;
@@ -249,33 +246,33 @@ i.burger {
   left: 0;
 }
 
-.subLinks li {
+.subLinks li{
   margin-top: 10px;
 }
 
-.subMenu .subLinks li a {
-  font-family: "Fira Sans", sans-serif;
+.subMenu .subLinks li a{
+  font-family: 'Fira Sans', sans-serif;
   color: var(--pri-text-color);
   text-decoration: none;
   padding: 0;
   font-size: 1.6rem;
 }
 
-.subMenuTop li:hover {
+.subMenuTop li:hover{
   background-color: var(--pri-bg-color);
   border-radius: 5px;
 }
 
-.subLinks span {
+.subLinks span{
   font-size: 1rem;
 }
 
-.subMenuBottom {
+.subMenuBottom{
   padding-top: 30%;
 }
 
-.subMenu .subLinks .subMenuBottom li {
-  font-family: "Fira Sans", sans-serif;
+.subMenu .subLinks .subMenuBottom li{
+  font-family: 'Fira Sans', sans-serif;
   color: #f2f2f270;
   text-decoration: none;
   padding: 0;
@@ -283,11 +280,13 @@ i.burger {
   font-size: 1.6rem;
 }
 
-.show {
+.show{
   display: flex;
   top: 1%;
   left: 122%;
 }
+
+
 
 /* MAIN */
 main {
@@ -313,7 +312,6 @@ main {
 
 .vidWrapper video {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 /* section burger */
@@ -370,7 +368,7 @@ section#burger h1 {
 
 .burger-content-text p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .burger-button {
@@ -378,22 +376,15 @@ section#burger h1 {
 }
 
 .btn-burger {
-  border-radius: 5px;
-  min-width: 200px;
-  margin-top: 25px;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  background-color: unset;
-  padding: 12px 20px;
-  cursor: pointer;
-  color: var(--pri-text-color);
+  padding: 5px 8px;
+  font-size: 1.2rem;
   font-family: "Fira Sans", sans-serif;
-  box-shadow: 0 9px #999;
-}
-
-.btn-burger:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  text-transform: uppercase;
+  min-width: 100px;
+  cursor: pointer;
+  background-color: var(--for-bg-color);
+  color: var(--pri-text-color);
+  border: 1px solid var(--for-bg-color);
 }
 
 .burger-active {
@@ -402,23 +393,6 @@ section#burger h1 {
 
 .burger-hidden {
   display: none;
-}
-
-#chickenButton button {
-  background-color: var(--chicken-color);
-  color: var(--pri-bg-color);
-  border: 1px solid var(--chicken-color);
-  margin: 0 15px;
-}
-#veggieButton button {
-  background-color: var(--veggie-color);
-  border: 1px solid var(--veggie-color);
-  margin: 0 15px;
-}
-#beefButton button {
-  background-color: var(--beef-color);
-  border: 1px solid var(--beef-color);
-  margin: 0 15px;
 }
 
 /* section about */
@@ -435,7 +409,6 @@ section#about h1 {
 
 section#about p {
   font-family: "Fira Sans", sans-serif;
-  text-align: left;
 }
 
 section#about img {
@@ -557,17 +530,18 @@ section#partners .card-text-title h4 {
 
 section#partners .card-text-paragraph p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   text-align: left;
   word-spacing: 0.3rem;
+  line-height: 1.4rem;
 }
 
 section#partners .card-text-button {
   border: 1px solid var(--pri-text-color);
   border-radius: 5px;
   width: max-content;
-  margin-top: 10px;
-  font-size: 1.6rem;
+  margin-top: 25px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding: 12px 20px;
   box-shadow: inset 0px 0px 0px var(--pri-text-color);
@@ -724,17 +698,7 @@ footer img {
 
   .burger-content-text p {
     font-family: "Fira Sans", sans-serif;
-    font-size: 1.2rem;
-  }
-
-  .btn-burger {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-  }
-
-  /* section partners */
-  section#about p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   /* section partners */
@@ -763,7 +727,7 @@ footer img {
     border-radius: 5px;
     width: max-content;
     margin-top: 25px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     padding: 12px 20px;
   }
@@ -819,29 +783,24 @@ footer img {
 
   .burger-content-text p {
     display: none;
+    /* font-size: 1rem;
+  margin-top: 20px; */
   }
 
   .burger-button {
     text-align: initial;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
   }
 
   .btn-burger {
-    min-width: 150px;
-    padding: 5px 8px;
-    font-size: 1rem;
+    position: absolute;
+    top: 40%;
+    transform: rotate(-90deg);
+    transform-origin: 20% 50%;
   }
 
-  #chickenButton button {
-    margin: 0;
-  }
-  #veggieButton button {
-    margin: 0;
-  }
-  #beefButton button {
-    margin: 0;
+  .btn-burger-next {
+    right: 0;
+    transform-origin: 50% -40%;
   }
 
   /* section about */
