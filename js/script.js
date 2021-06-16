@@ -95,16 +95,6 @@ function SendFeedback() {
 }
 }
 
-/*
-  if(document.getElementById("FeedbackArea").value == "You can't send an empty message"){
-
-    document.getElementById("FeedbackArea").value = "You can't not send that";
-    setTimeout(function(){ 
-      document.getElementById("FeedbackArea").value = ""; 
-    }, 2500);
-  }
-  */
-
 
 /* Burger Switch */
 function toChicken(){
