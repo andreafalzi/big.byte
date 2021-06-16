@@ -95,6 +95,42 @@ function SendFeedback() {
 }
 }
 
+/* --- Img Modal --- */
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var modalImg = document.getElementById("img001");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  document.body.classList.add('overflowHidden');
+}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  document.body.classList.add('overflowHidden');
+}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  document.body.classList.add('overflowHidden');
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+  document.body.classList.remove('overflowHidden');
+}
+
+/* --- Img Modal --- */
 
 /* Burger Switch */
 function toChicken(){
