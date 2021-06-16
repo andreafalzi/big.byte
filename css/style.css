@@ -91,14 +91,27 @@ nav {
   align-items: center;
 }
 
+.navBottom{
+  display: flex;
+  height: 55%;
+  justify-content: center;
+  align-items: center;
+}
+
 .navTitle p {
   font-family: "Press Start 2P", cursive;
   font-size: 0.6rem;
+  padding: 10px 0 10px 0;
+  transition: 0.3s ease;
 }
 
 .navTitle a {
   text-decoration: none;
   color: #f2f2f2;
+}
+
+.navTitle p:hover{
+  transform: scale(1.1);
 }
 
 ul {
@@ -121,6 +134,11 @@ li.links a {
   padding: 25px;
 }
 
+li.links a:hover {
+
+  color: #f2f2f2;
+}
+
 li.links:hover {
   border-radius: 20px;
   background-color: #14a642;
@@ -130,13 +148,6 @@ li.links:hover {
 li.links:hover .line {
   display: block;
 }
-
-/* li.links:active .line{
-  display: block;
-  height: 55px;
-  bottom: 8px;
-  transition: 0.3s ease;
-} */
 
 .active .line {
   display: block;
@@ -859,9 +870,6 @@ footer img {
   section#partners h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-
-  section#partners img {
   }
 
   section#partners .card-item {
