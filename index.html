@@ -77,7 +77,7 @@
 
       <!-- BURGER MENU START -->
       <ul id="menu">
-        <li><a href="burger.html">Burger</a></li>
+        <li><a href="#burger">Burger</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#partners">Partners</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -96,7 +96,7 @@
 
       <!-- SECTION BURGER -->
       <section id="burger">
-        <h1><i class="fas fa-hamburger"></i> Burger <i class="fas fa-hamburger"></i></h1>
+        <h1><i class="fas fa-hamburger"></i>&nbsp;&nbsp;Burger&nbsp;&nbsp;<i class="fas fa-hamburger"></i></h1>
         <div class="burger-slider-container">
           <div class="burger-container">
             <div id="beefCard" class="burger-active">
@@ -172,15 +172,27 @@
 
       <!-- SECTION ABOUT -->
       <section id="about">
-        <h1><i class="fas fa-khanda"></i> Our Quest <i class="fas fa-khanda"></i></h1>
+        <h1><i class="fas fa-khanda"></i>&nbsp;&nbsp;Our Quest&nbsp;&nbsp;<i class="fas fa-khanda"></i></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime odit temporibus incidunt voluptatem, iste, ipsum omnis voluptatum minus minima facere fugit in dolores blanditiis vero reprehenderit iure veniam quia sapiente architecto deleniti labore tenetur rerum? Sit architecto nulla laboriosam cum ex. Exercitationem est voluptates accusantium sequi modi, placeat ab?</p>
-        <img src="img/about/mario-bros-big-byte.jpg" alt="mario-bros-big-byte" />
+
+        <div class="image wrap-mario">
+          <img id="bg" src="img/about/mario-bros-bg.jpg" alt="" />
+
+          <img id="mario" src="img/about/mario-bros-char.png" alt="" />
+
+          <img id="burgerBox" src="img/about/mario-bros-big-byte.png" alt="" />
+        </div>
+        <!-- <button onclick="moveMario()">Move</button>
+        <button onclick="jumpMario()">Jump</button>
+      <button onclick="burgerShow()">Show Burger</button> -->
+        <button class="btn-mario-big red-mario" onclick="resetMario()">Reset</button>
+        <button class="btn-mario-big green-mario" onclick="actionMario()">GO</button>
       </section>
 
       <!-- SECTION SPONSOR -->
 
       <section id="partners">
-        <h1><i class="far fa-handshake"></i> Our Partners <i class="far fa-handshake"></i></h1>
+        <h1><i class="far fa-handshake"></i>&nbsp;&nbsp;Our Partners&nbsp;&nbsp;<i class="far fa-handshake"></i></h1>
         <div class="card-wrapper">
           <div id="myCardList" class="card-list">
             <div class="card-item">
