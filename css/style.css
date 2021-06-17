@@ -561,7 +561,7 @@ section#about img {
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom;
-  transition: 1s ease-in all 3500ms;
+  transition: 1s ease-in transform 3500ms;
 }
 
 .btn-mario-big {
