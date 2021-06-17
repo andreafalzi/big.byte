@@ -8,13 +8,12 @@ var navBar = document.getElementById("nav");
 var links = navBar.getElementsByClassName("links");
 
 for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function() {
+  links[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
-
 
 /* --- Show Menu --- */
 function showMenu() {
@@ -28,7 +27,6 @@ document.onclick = function (e) {
     x.classList.remove("responsive");
   }
 };
-
 
 /* --- Contact E-mail --- */
 const email = document.getElementById("email");
@@ -64,35 +62,27 @@ function closeChatForm() {
 }
 
 function SendFeedback() {
-  if(document.getElementById("FeedbackArea").value == "") {
-    document.getElementById("FeedbackArea").value = "You can't send an empty message"; 
-    setTimeout(function(){ 
-      document.getElementById("FeedbackArea").value = ""; 
+  if (document.getElementById("FeedbackArea").value == "") {
+    document.getElementById("FeedbackArea").value = "You can't send an empty message";
+    setTimeout(function () {
+      document.getElementById("FeedbackArea").value = "";
     }, 2500);
-  }
-
-  else if(document.getElementById("FeedbackArea").value == "You can't send an empty message"){
-
+  } else if (document.getElementById("FeedbackArea").value == "You can't send an empty message") {
     document.getElementById("FeedbackArea").value = "You can't not send that";
-    setTimeout(function(){ 
-      document.getElementById("FeedbackArea").value = ""; 
+    setTimeout(function () {
+      document.getElementById("FeedbackArea").value = "";
     }, 2500);
-  }
-
-  else if(document.getElementById("FeedbackArea").value == "You can't not send that"){
-
+  } else if (document.getElementById("FeedbackArea").value == "You can't not send that") {
     document.getElementById("FeedbackArea").value = "You can't not send that";
-    setTimeout(function(){ 
-      document.getElementById("FeedbackArea").value = ""; 
+    setTimeout(function () {
+      document.getElementById("FeedbackArea").value = "";
+    }, 2500);
+  } else {
+    document.getElementById("FeedbackArea").value = "Thank you for your feedback..";
+    setTimeout(function () {
+      document.getElementById("FeedbackArea").value = "";
     }, 2500);
   }
-
-    else {
-  document.getElementById("FeedbackArea").value = "Thank you for your feedback..";
-  setTimeout(function(){ 
-    document.getElementById("FeedbackArea").value = ""; 
-  }, 2500);
-}
 }
 
 /*
@@ -104,9 +94,45 @@ function SendFeedback() {
   }
   */
 
+/* --- Img Modal --- */
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var modalImg = document.getElementById("img001");
+var captionText = document.getElementById("caption");
+
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  /* captionText.innerHTML = this.alt; */
+  document.body.classList.add("overflowHidden");
+};
+img2.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  /* captionText.innerHTML = this.alt; */
+  document.body.classList.add("overflowHidden");
+};
+img3.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  /* captionText.innerHTML = this.alt; */
+  document.body.classList.add("overflowHidden");
+};
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+  document.body.classList.remove("overflowHidden");
+};
+
+/* --- Img Modal --- */
 
 /* Burger Switch */
-function toChicken(){
+function toChicken() {
   var b = document.getElementById("beefCard");
   var c = document.getElementById("chickenCard");
   var v = document.getElementById("veggieCard");
@@ -155,7 +181,7 @@ function toVeggie() {
   cb.classList.remove("burger-hidden");
   cb.classList.add("burger-active");
   cbb.classList.add("btn-burger-next");
-  bbb.classList.remove("btn-burger-next");  
+  bbb.classList.remove("btn-burger-next");
 }
 
 function toBeef() {
